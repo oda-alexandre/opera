@@ -23,7 +23,7 @@ passwd -d opera && \
 adduser opera sudo
 
 RUN echo "deb http://deb.opera.com/opera-stable/ stable non-free" >> /etc/apt/sources.list && \
-wget -O - https://deb.opera.com/archive.key | apt-key add - && \
+wget -O - https://deb.opera.com/archive.key | apt-key add -
 RUN apt-get update
 RUN yes | apt-get install -y \
 opera-stable && \
