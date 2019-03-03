@@ -1,6 +1,9 @@
 FROM debian:stretch-slim
 
-MAINTAINER https://oda-alexandre.github.io
+MAINTAINER https://oda-alexandre.com
+
+# VARIABLES
+ENV USER opera
 
 # INSTALLATION DES PREREQUIS
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -17,25 +20,27 @@ libasound2 \
 libasound2-plugins \
 pulseaudio \
 pulseaudio-utils \
-libcanberra-gtk-module
+libcanberra-gtk-module && \
 
 # AJOUT UTILISATEUR
-RUN useradd -d /home/opera -m opera && \
-passwd -d opera && \
-adduser opera sudo
+useradd -d /home/${USER} -m ${USER} && \
+passwd -d ${USER} && \
+adduser ${USER} sudo && \
 
 # AJOUT DES REPOS opera-stable DANS LE FICHIER /etc/apt/sources.list & AJOUT DE LA CLEF
-RUN echo "deb http://deb.opera.com/opera-stable/ stable non-free" >> /etc/apt/sources.list && \
-wget -O - https://deb.opera.com/archive.key | apt-key add -
+echo "deb http://deb.opera.com/opera-stable/ stable non-free" >> /etc/apt/sources.list && \
+wget -O - https://deb.opera.com/archive.key | apt-key add - && \
 
 # INSTALLATION DE L'APPLICATION
 RUN apt-get update
 RUN yes | apt-get install -y \
-opera-stable && \
-mkdir /home/opera/Downloads
+opera-stable
 
 # SELECTION UTILISATEUR
-USER opera
+USER ${USER}
+
+# SELECTION ESPACE DE TRAVAIL
+WORKDIR /home/${USER}
 
 # NETTOYAGE
 RUN sudo apt-get --purge autoremove -y \

@@ -1,25 +1,32 @@
 # OPERA
 
-![opera](https://raw.githubusercontent.com/oda-alexandre/opera/master/img/logo-opera.png) ![docker](https://raw.githubusercontent.com/oda-alexandre/opera/master/img/logo-docker.png)
+[![dockeri.co](https://dockeri.co/image/alexandreoda/opera)](https://hub.docker.com/r/alexandreoda/opera)
 
 
 ## INDEX
 
-- [Build Docker](#BUILD)
+- [Badges](#BADGES)
 - [Introduction](#INTRODUCTION)
 - [Prerequis](#PREREQUIS)
 - [Installation](#INSTALLATION)
 - [License](#LICENSE)
 
 
-## BUILD DOCKER
+## BADGES
 
-[![opera docker build](https://img.shields.io/docker/build/alexandreoda/opera.svg)](https://hub.docker.com/r/alexandreoda/opera)
+[![version](https://images.microbadger.com/badges/version/alexandreoda/opera.svg)](https://microbadger.com/images/alexandreoda/opera)
+[![size](https://images.microbadger.com/badges/image/alexandreoda/opera.svg)](https://microbadger.com/images/alexandreoda/opera")
+[![build](https://img.shields.io/docker/build/alexandreoda/opera.svg)](https://hub.docker.com/r/alexandreoda/opera)
+[![automated](https://img.shields.io/docker/automated/alexandreoda/opera.svg)](https://hub.docker.com/r/alexandreoda/opera)
 
 
 ## INTRODUCTION
 
-Ce repository contient le fichier Dockerfile de [Opera](https://www.opera.com/fr) pour [docker](https://www.docker.com), mis à jour automatiquement dans le [docker hub](https://hub.docker.com/r/alexandreoda/opera/) public.
+Ce repository contient le fichier Dockerfile de
+
+- [opera](https://www.opera.com/fr)
+
+Mis à jour automatiquement dans le [docker hub public](https://hub.docker.com/r/alexandreoda/opera/).
 
 
 ## PREREQUIS
