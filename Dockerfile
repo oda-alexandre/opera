@@ -29,7 +29,7 @@ adduser ${USER} sudo && \
 
 # AJOUT DES REPOS opera-stable DANS LE FICHIER /etc/apt/sources.list & AJOUT DE LA CLEF
 echo "deb http://deb.opera.com/opera-stable/ stable non-free" >> /etc/apt/sources.list && \
-wget -O - https://deb.opera.com/archive.key | apt-key add - && \
+wget -O - https://deb.opera.com/archive.key | apt-key add -
 
 # INSTALLATION DE L'APPLICATION
 RUN apt-get update
