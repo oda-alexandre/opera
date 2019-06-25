@@ -1,6 +1,6 @@
 # OPERA
 
-[![dockeri.co](https://dockeri.co/image/alexandreoda/opera)](https://hub.docker.com/r/alexandreoda/opera)
+<img src="http://pngimg.com/uploads/opers/opers_PNG15.png" />
 
 
 ## INDEX
@@ -14,10 +14,7 @@
 
 ## BADGES
 
-[![version](https://images.microbadger.com/badges/version/alexandreoda/opera.svg)](https://microbadger.com/images/alexandreoda/opera)
-[![size](https://images.microbadger.com/badges/image/alexandreoda/opera.svg)](https://microbadger.com/images/alexandreoda/opera")
-[![build](https://img.shields.io/docker/build/alexandreoda/opera.svg)](https://hub.docker.com/r/alexandreoda/opera)
-[![automated](https://img.shields.io/docker/automated/alexandreoda/opera.svg)](https://hub.docker.com/r/alexandreoda/opera)
+[![pipeline status](https://gitlab.com/oda-alexandre/opera/badges/master/pipeline.svg)](https://gitlab.com/oda-alexandre/opera/commits/master)
 
 
 ## INTRODUCTION
