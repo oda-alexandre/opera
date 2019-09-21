@@ -1,11 +1,11 @@
 FROM debian:stretch-slim
 
-MAINTAINER https://www.oda-alexandre.com/
+LABEL authors https://www.oda-alexandre.com/
 
 ENV USER opera
 
 RUN echo -e '\033[36;1m ******* INSTALL PACKAGES ******** \033[0m' && \
-apt-get update && apt-get install -y --no-install-recommends \
+apt update && apt install -y --no-install-recommends \
 wget \
 sudo \
 ca-certificates \
@@ -31,8 +31,8 @@ echo "deb http://deb.opera.com/opera-stable/ stable non-free" >> /etc/apt/source
 wget -O - https://deb.opera.com/archive.key | apt-key add -
 
 RUN echo -e '\033[36;1m ******* INSTALL APP ******** \033[0m' && \
-apt-get update && \
-yes | apt-get install -y \
+apt update && \
+yes | apt install -y \
 opera-stable
 
 RUN echo -e '\033[36;1m ******* SELECT USER ******** \033[0m'
