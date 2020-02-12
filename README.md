@@ -1,6 +1,6 @@
 # OPERA
 
-<img src="http://pngimg.com/uploads/opers/opers_PNG15.png" width="200" height="200"/>
+<img src="https://assets.gitlab-static.net/uploads/-/system/project/avatar/12904471/opera_logo.jpg" width="200" height="200"/>
 
 ## INDEX
 
