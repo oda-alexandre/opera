@@ -4,14 +4,12 @@ LABEL authors https://www.oda-alexandre.com
 
 ENV USER opera
 ENV HOME /home/${USER}
-ENV LOCALES fr_FR.UTF-8
 
 RUN echo -e '\033[36;1m ******* INSTALL PACKAGES ******** \033[0m' && \
   apt-get update && apt-get install -y --no-install-recommends \
   wget \
   sudo \
   ca-certificates \
-  locales \
   gnupg \
   apt-transport-https \
   x11-xserver-utils \
@@ -23,9 +21,6 @@ RUN echo -e '\033[36;1m ******* INSTALL PACKAGES ******** \033[0m' && \
   pulseaudio \
   pulseaudio-utils \
   libcanberra-gtk-module
-
-RUN echo -e '\033[36;1m ******* CHANGE LOCALES ******** \033[0m' && \
-  locale-gen ${LOCALES}
 
 RUN echo -e '\033[36;1m ******* ADD USER ******** \033[0m' && \
   useradd -d ${HOME} -m ${USER} && \
